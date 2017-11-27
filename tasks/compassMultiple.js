@@ -130,6 +130,7 @@
         options.fontsDir && (cmd = util.format('%s --fonts-dir=%s', cmd, options.fontsDir));
         options.environment && (cmd = util.format('%s --environment=%s', cmd, options.environment));
         options.outputStyle && (cmd = util.format('%s --output-style=%s', cmd, options.outputStyle));
+        options.sourceMap && (cmd = util.format('%s --sourcemap', cmd));
         options.importPath && (cmd = util.format('%s -I %s', cmd, options.importPath));
         options.relativeAssets && (cmd = util.format('%s --relative-assets', cmd));
         options.time && (cmd = util.format('%s --time', cmd));
@@ -181,6 +182,7 @@
           var opt = multiple[i];
           opt.environment === undefined && (opt.environment = options.environment);
           opt.outputStyle === undefined && (opt.outputStyle = options.outputStyle);
+          opt.sourceMaps === undefined && (opt.sourceMaps = options.sourceMaps);
           opt.javascriptsDir === undefined && (opt.javascriptsDir = options.javascriptsDir);
           opt.imagesDir === undefined && (opt.imagesDir = options.imagesDir);
           opt.fontsDir === undefined && (opt.fontsDir = options.fontsDir);
