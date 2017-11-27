@@ -182,7 +182,7 @@
           var opt = multiple[i];
           opt.environment === undefined && (opt.environment = options.environment);
           opt.outputStyle === undefined && (opt.outputStyle = options.outputStyle);
-          opt.sourceMaps === undefined && (opt.sourceMaps = options.sourceMaps);
+          opt.sourceMap === undefined && (opt.sourceMap = options.sourceMap);
           opt.javascriptsDir === undefined && (opt.javascriptsDir = options.javascriptsDir);
           opt.imagesDir === undefined && (opt.imagesDir = options.imagesDir);
           opt.fontsDir === undefined && (opt.fontsDir = options.fontsDir);
